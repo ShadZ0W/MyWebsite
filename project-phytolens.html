@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhytoLens — Project Details | Luqman Nurhakim</title>
+  
+  <!-- Shared Design System -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  
+  <!-- Dedicated PhytoLens Stylesheet -->
+  <link rel="stylesheet" href="css/phytolens.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Canvas -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- Technical Ruler HUD -->
+  <aside class="scroll-ruler" id="scrollRuler" aria-label="Page navigation progress">
+    <div class="ruler-checkpoint-label" id="rulerCheckpoint">
+      <span class="checkpoint-indicator"></span>
+      <span id="checkpointText">OVERVIEW</span>
+    </div>
+    <div class="ruler-indicator" id="rulerIndicator"></div>
+    <div class="ruler-ticks" id="rulerTicks"></div>
+    <span class="ruler-readout" id="rulerReadout">0%</span>
+  </aside>
+
+  <!-- Navigation (Home link removed; logo handles home routing) -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" style="color: var(--text-main);">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="phytolens-page">
+
+    <!-- Executive Header with Published Paper Link -->
+    <header class="section-header zoom-target" data-section="OVERVIEW">
+      <div class="section-kicker">// ACADEMIC CAPSTONE &bull; FINAL YEAR PROJECT</div>
+      <div class="header-title-flex">
+        <h1 class="hero-title">PhytoLens: Real-Time Mobile Botanical Diagnostics Platform</h1>
+        <!-- Action Buttons: External Read + Direct File Download -->
+        <div class="header-action-group">
+        <!-- View Online in NTU Repository -->
+        <a href="https://dr.ntu.edu.sg/entities/publication/7fd75af5-f1b5-4c59-b423-04a5b7bc75b7" target="_blank" rel="noopener noreferrer" class="btn btn-primary paper-btn">
+            <span>View on NTU Repository</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+
+        <!-- Direct File Download -->
+        <a href="assets/PhytoLens/Luqman_Nurhakim_Bin_Sairi_U2322138D_FYP_Final_Report_NoGAI.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary paper-btn">
+        <span>View PDF</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        </a>
+        </div>
+      <p class="phytolens-lead">
+        An autonomous Android application engineering pipeline connecting device-level camera buffers to multimodal vision models. Designed to execute automated taxonomic leaf classification, pathological anomaly detection, and real-time remediation analysis on mobile hardware.
+      </p>
+
+      <div class="card-tags" style="margin-top: 1.2rem;">
+        <span class="tag">Android Studio</span>
+        <span class="tag">Java</span>
+        <span class="tag">Google Gemini API</span>
+        <span class="tag">Multimodal Vision</span>
+        <span class="tag">Firebase Auth</span>
+        <span class="tag">Cloud Firestore</span>
+      </div>
+    </header>
+
+    <!-- Compact Scaled-Down Phone Viewport -->
+    <section class="compact-media-section zoom-target" data-section="SHOWCASE">
+      <div class="compact-phone-viewport" data-carousel>
+        <div class="carousel-container">
+          <div class="carousel-slide active"><img src="assets/PhytoLens/1.jpg" alt="PhytoLens Home & Exploration Feed" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/2.jpg" alt="Botanical Articles" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/3.jpg" alt="Image Acquisition Guidance" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/4.jpg" alt="Camera Viewfinder" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/5.jpg" alt="Captured Leaf" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/6.jpg" alt="Analysis Prompt Confirmation" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/7.jpg" alt="Analysis Starting" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/8.jpg" alt="Taxonomic Analysis" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/9.jpg" alt="Care Guidance" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/10.jpg" alt="Recent History Log" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/11.jpg" alt="Historical Specimen Details" /></div>
+          <div class="carousel-slide"><img src="assets/PhytoLens/12.jpg" alt="User Profile View" /></div>
+        </div>
+        <div class="carousel-dots"></div>
+      </div>
+    </section>
+
+    <!-- Specifications Table -->
+    <section class="tech-spec-deck zoom-target" data-section="SPECIFICATIONS">
+      <div class="spec-deck-header">// SPECIFICATIONS &amp; METRICS</div>
+      <div class="spec-deck-grid">
+        <div class="spec-card">
+          <span class="spec-label">PLATFORM / STACK</span>
+          <span class="spec-value">Native Android SDK (Java)</span>
+          <span class="spec-detail">Camera2 API, Background Executor Services</span>
+        </div>
+        <div class="spec-card">
+          <span class="spec-label">MODEL INFERENCE</span>
+          <span class="spec-value">Gemini Multimodal API</span>
+          <span class="spec-detail">Direct Vision Prompts &amp; Structured JSON Outputs</span>
+        </div>
+        <div class="spec-card">
+          <span class="spec-label">PERSISTENCE &amp; AUTH</span>
+          <span class="spec-value">Firebase Platform</span>
+          <span class="spec-detail">Cloud Firestore, Offline Query Sync, Auth Rules</span>
+        </div>
+        <div class="spec-card">
+          <span class="spec-label">VERIFICATION SUITE</span>
+          <span class="spec-value">20+ Structured Scenarios</span>
+          <span class="spec-detail">Edge lighting, motion blur, non-flora rejection</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block 1: Problem Statement -->
+    <section class="case-study-block zoom-target" data-section="PROBLEM STATEMENT">
+      <div class="section-kicker">// 01. PROBLEM &amp; SYSTEM OBJECTIVE</div>
+      <h2>The Challenge with Traditional On-Device Classifiers</h2>
+      <p>
+        Most mobile botanical applications rely on local, edge-quantized Convolutional Neural Networks (CNNs). While fast, these static classifiers have rigid taxonomic boundaries and frequently fail when leaves are photographed under suboptimal conditions—such as indirect sunlight, shadows, wilting, or partial leaf occlusions.
+      </p>
+      <p>
+        Furthermore, traditional classifiers only output a categorical label (e.g., <em>"Pandan - 82%"</em>). They cannot evaluate nuanced questions like whether chlorosis is caused by nitrogen deficiency or fungal rot, nor can they output context-aware steps for soil remediation.
+      </p>
+      <div class="detail-callout">
+        <strong>Core Objective:</strong> Build a responsive Android client capable of acquiring camera frames, performing pre-flight sanity checks, streaming data to Google's multimodal models, and deserializing actionable botanical intelligence into an intuitive user interface.
+      </div>
+    </section>
+
+    <!-- Block 2: Architecture & Pipeline -->
+    <section class="case-study-block zoom-target" data-section="ARCHITECTURE">
+      <div class="section-kicker">// 02. PIPELINE &amp; FLOW</div>
+      <h2>End-to-End Processing Architecture</h2>
+      <p>
+        The application isolates background tasks to prevent main-thread UI stalling during camera processing and network calls:
+      </p>
+
+      <div class="pipeline-list">
+        <div class="pipeline-item">
+          <div class="step-index">STEP 01</div>
+          <div class="step-body">
+            <h4>Frame Ingestion &amp; Pre-Processing</h4>
+            <p>Captures hardware camera bitmap buffers via Camera2. Automatically runs dimension downsampling and JPEG compression to keep network payloads under latency targets while preserving leaf vein micro-structures.</p>
+          </div>
+        </div>
+
+        <div class="pipeline-item">
+          <div class="step-index">STEP 02</div>
+          <div class="step-body">
+            <h4>Orchestrated Prompt Payload</h4>
+            <p>Constructs an engineered multimodal prompt payload sent to the Gemini API. Enforces a strict response schema covering scientific nomenclature, common variations, anomaly indicators, and practical care recommendations.</p>
+          </div>
+        </div>
+
+        <div class="pipeline-item">
+          <div class="step-index">STEP 03</div>
+          <div class="step-body">
+            <h4>Payload Parsing &amp; View Rendering</h4>
+            <p>A background worker receives the stream, parses the structured response, and updates the Android UI state using asynchronous callbacks to eliminate UI freezing during long inferences.</p>
+          </div>
+        </div>
+
+        <div class="pipeline-item">
+          <div class="step-index">STEP 04</div>
+          <div class="step-body">
+            <h4>Cloud History Synchronization</h4>
+            <p>The query result, confidence score, and timestamped capture metadata are synchronized with Firebase Cloud Firestore, enabling longitudinal health tracking of specimens across weeks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block 3: Engineering Capabilities -->
+    <section class="case-study-block zoom-target" data-section="SYSTEM CAPABILITIES">
+      <div class="section-kicker">// 03. IMPLEMENTED CAPABILITIES</div>
+      <h2>Core Engineering Highlights</h2>
+
+      <div class="two-col-details">
+        <div class="detail-card">
+          <h4>Camera Pre-Flight Guidance</h4>
+          <p>Integrated real-time compositional tips and focus checks in the viewfinder to guide users on lighting, distance, and orientation before sending data to the API.</p>
+        </div>
+
+        <div class="detail-card">
+          <h4>Defensive Edge-Case Handling</h4>
+          <p>Trained prompt constraints to defensively reject non-organic specimens, artificial items, or heavily degraded imagery without wasting inference tokens on hallucinated diagnoses.</p>
+        </div>
+
+        <div class="detail-card">
+          <h4>Offline Cache &amp; History Vault</h4>
+          <p>Built local SQLite caching with Cloud Firestore syncing so previous analysis results, tips, and articles remain readable even when mobile connectivity drops.</p>
+        </div>
+
+        <div class="detail-card">
+          <h4>Full SDLC &amp; Validation</h4>
+          <p>Executed over 20 structured verification cases verifying API timeout resilience, schema format parsing, and UI state restoration across device rotations and low-memory kills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block 4: Insights -->
+    <section class="case-study-block zoom-target" data-section="OUTCOMES" style="margin-bottom: 6rem;">
+      <div class="section-kicker">// 04. REFLECTION &amp; TAKEAWAYS</div>
+      <h2>Engineering Insights</h2>
+      <p>
+        Developing PhytoLens showcased the practical balance between on-device hardware constraints and cloud AI inference. Managing thread boundaries, preventing network memory leaks in Android Java, and designing structured prompt schemas formed the groundwork for subsequent work on low-latency systems and robotics.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="footer zoom-target">
+    <div class="footer-glow"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Luqman Nurhakim Bin Sairi. Built with precision, hardware-accelerated CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

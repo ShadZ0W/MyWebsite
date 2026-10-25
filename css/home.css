@@ -1,0 +1,217 @@
+/* --- Hero Section --- */
+.hero {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 15rem 1.5rem 7rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 6.5vw, 5.2rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+}
+
+.breathe-text {
+  display: inline-block;
+  animation: textBreathe 5s ease-in-out infinite alternate;
+}
+
+@keyframes textBreathe {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(56, 189, 248, 0));
+  }
+  100% {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.4));
+  }
+}
+
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-bio {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  line-height: 1.65;
+  margin-bottom: 0.9rem;
+  font-weight: 400;
+}
+
+.highlight-text {
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 1px dashed var(--cyan-core);
+}
+
+.hero-detail {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+
+/* --- Vertical Projects List --- */
+.projects-vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-row:hover {
+  border-color: var(--card-border-hover);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.15);
+}
+
+.row-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #090c13;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+  background: rgba(6, 8, 13, 0.6);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: var(--cyan-core);
+  width: 18px;
+  border-radius: 999px;
+  box-shadow: 0 0 8px var(--cyan-core);
+}
+
+.row-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-details .card-tags {
+  margin-bottom: 1.2rem;
+}
+
+.row-details h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.9rem;
+  color: #ffffff;
+}
+
+.row-details p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.all-projects-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-all-projects {
+  padding: 1rem 2.4rem;
+  font-size: 1rem;
+  border-color: rgba(56, 189, 248, 0.3);
+  background: rgba(13, 17, 25, 0.75);
+}
+
+.btn-all-projects:hover {
+  border-color: var(--cyan-core);
+  color: var(--cyan-core);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+}
+
+@media (max-width: 900px) {
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 1.5rem;
+  }
+}

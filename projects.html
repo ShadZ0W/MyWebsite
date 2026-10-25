@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Luqman Nurhakim</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Canvas -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- Technical Ruler -->
+  <aside class="scroll-ruler" id="scrollRuler" aria-label="Page navigation progress">
+    <div class="ruler-checkpoint-label" id="rulerCheckpoint">
+      <span class="checkpoint-indicator"></span>
+      <span id="checkpointText">CURRENT</span>
+    </div>
+    <div class="ruler-indicator" id="rulerIndicator"></div>
+    <div class="ruler-ticks" id="rulerTicks"></div>
+    <span class="ruler-readout" id="rulerReadout">0%</span>
+  </aside>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" style="color: var(--text-main);">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="projects-page-wrapper">
+    
+    <!-- Top Header & Clean Jump Bar -->
+    <header class="section-header zoom-target" data-section="PROJECTS">
+      <div class="section-kicker">// PORTFOLIO DIRECTORY</div>
+      <h2>Projects &amp; Systems</h2>
+      <p>Engineering index spanning active systems research, computer vision, and distributed software architecture.</p>
+
+      <!-- Clean Category Jump Tabs -->
+      <div class="project-jump-bar">
+        <a href="#current-projects" class="jump-tab">Current Projects</a>
+        <a href="#previous-projects" class="jump-tab">Previous Projects</a>
+      </div>
+    </header>
+
+    <!-- ================= CURRENT PROJECTS ================= -->
+    <section id="current-projects" class="section projects-category-section" data-section="CURRENT">
+      <div class="section-subheading zoom-target">
+        <span class="pulse-dot"></span>
+        <h3>Active Development</h3>
+      </div>
+
+      <div class="projects-vertical-list">
+
+        <!-- Current 1: Asian Folklore Ghost Game -->
+        <article class="project-row zoom-target">
+          <div class="row-media">
+            <div class="media-placeholder-graphic">
+              <span class="placeholder-icon">🏮</span>
+              <span class="placeholder-caption">Godot 4 • Server-Authoritative Netcode</span>
+            </div>
+          </div>
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">Godot 4</span>
+              <span class="tag">GDScript</span>
+              <span class="tag">Multiplayer Sync</span>
+              <span class="tag">Game Architecture</span>
+            </div>
+            <h3>Asymmetric Asian Folklore Game</h3>
+            <p>
+              An asymmetric multiplayer horror experience built in Godot 4. Focuses on authentic folkloric entities (Pontianak, Jiangshi, Penanggalan) with unique entity-specific kinematic locomotion, dynamic upgrade synergies, and proximity-based audio mechanics.
+            </p>
+            <div class="row-actions">
+              <a href="project-folklore.html" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active"><img src="assets/GrimLight/gl1.png" alt="GrimLight 1" /></div>
+              <div class="carousel-slide"><img src="assets/GrimLight/gl2.png" alt="GrimLight 2" /></div>
+              <div class="carousel-slide"><img src="assets/GrimLight/gl3.png" alt="GrimLight 3" /></div>
+              <div class="carousel-slide"><img src="assets/GrimLight/gl4.png" alt="GrimLight 4" /></div>
+              <div class="carousel-slide"><img src="assets/GrimLight/gl5.png" alt="GrimLight 5" /></div>
+              <div class="carousel-slide"><img src="assets/GrimLight/gl6.png" alt="GrimLight 6" /></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">AI</span>
+              <span class="tag">RUN.WORLD</span>
+              <span class="tag">Game Architecture</span>
+            </div>
+            <h3>Run.World Competition - October Jam (Game)</h3>
+            <p>
+              Every night after closing, Grimlight Mall changes. The lights flicker, the gates lock on their own, and each store twists into a nightmare version of itself. Mannequins move, toy stores come alive, food courts grow monsters, and the security cameras show things that aren't there in real life. People say the mall was built on top of something cursed, and years ago a strange incident was covered up by the owners. You play as someone trapped inside after hours — maybe a delivery worker, cleaner, security guard, teen sneaking in, or a shopper who got left behind. As midnight hits, the mall transforms into a monster zone, and now your only goal is to survive the night and uncover what caused the curse.
+            </p>
+            <div class="row-actions">
+              <a href="https://w.run/shadz/grimlight-mall-nightfall" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+            </div>
+          </div>
+        </article>
+         <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active"><img src="assets/ReLoop/rl1.png" alt="ReLoop 1" /></div>
+              <div class="carousel-slide"><img src="assets/ReLoop/rl2.png" alt="ReLoop 2" /></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">AI</span>
+              <span class="tag">RUN.WORLD</span>
+            </div>
+            <h3>Run.World Competition - October Jam (Video)</h3>
+            <p>
+              The world snaps back into existence with a jarring jolt that rattles Kael to his core. He violently inhales a lungful of humid, sulfurous air, spitting out the exact mouthful of bitter muck he tasted seconds ago. The phantom ache in his chest is blistering, but his skin is unbroken, and the mud around his hands is undisturbed. He glances up—Lyra is just beginning to roll to her feet, and Doran is opening his mouth to issue his arrogant challenge. Kael does not wait. He surges upright with desperate adrenaline, lunging forward to clamp his hand hard onto Doran's arm.
+            </p>
+            <div class="row-actions">
+              <a href="https://run.world/jams/octoberjam?game=5u4uBHrkmLc8bG0OOaS9%3AIL2yuitcILM5hG6YxI0N" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    
+
+
+    <!-- ================= PREVIOUS PROJECTS ================= -->
+    <section id="previous-projects" class="section projects-category-section" data-section="PREVIOUS">
+      <div class="section-subheading zoom-target">
+        <span class="archive-dot"></span>
+        <h3>Previous Projects</h3>
+      </div>
+
+      <div class="projects-vertical-list">
+
+        <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active"><img src="assets/EmployCrisis/ec1.png" alt="Employment Crisis 1" /></div>
+              <div class="carousel-slide"><img src="assets/EmployCrisis/ec2.png" alt="Employment Crisis 2" /></div>
+              <div class="carousel-slide"><img src="assets/EmployCrisis/ec3.png" alt="Employment Crisis 3" /></div>
+              <div class="carousel-slide"><img src="assets/EmployCrisis/ec4.png" alt="Employment Crisis 4" /></div>
+              <div class="carousel-slide"><img src="assets/EmployCrisis/ec5.png" alt="Employment Crisis 5" /></div>
+              <div class="carousel-slide"><img src="assets/EmployCrisis/ec6.png" alt="Employment Crisis 6" /></div>
+              <div class="carousel-slide"><img src="assets/EmployCrisis/ec7.png" alt="Employment Crisis 7" /></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">AI</span>
+              <span class="tag">RUN.WORLD</span>
+              <span class="tag">Game Architecture</span>
+            </div>
+            <h3>Run.World Competition - September Jam</h3>
+            <p>
+              You're a graduate student and trying to find a job based on your interests and future careers. Fast forward time lap in the game. Players can get fired if they fail the job 4 times in a month? If they get fired, they can reapply any job on the market with their portfolio
+            </p>
+            <div class="row-actions">
+              <a href="https://w.run/jayscholar/employment-crisis" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project 1: PhytoLens -->
+        <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active"><img src="assets/PhytoLens/1.jpg" alt="PhytoLens 1" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/2.jpg" alt="PhytoLens 2" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/3.jpg" alt="PhytoLens 3" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/4.jpg" alt="PhytoLens 4" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/5.jpg" alt="PhytoLens 5" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/6.jpg" alt="PhytoLens 6" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/7.jpg" alt="PhytoLens 7" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/8.jpg" alt="PhytoLens 8" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/9.jpg" alt="PhytoLens 9" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/10.jpg" alt="PhytoLens 10" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/11.jpg" alt="PhytoLens 11" /></div>
+              <div class="carousel-slide"><img src="assets/PhytoLens/12.jpg" alt="PhytoLens 12" /></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">Android Development</span>
+              <span class="tag">AI / ML</span>
+              <span class="tag">Gemini API</span>
+            </div>
+            <h3>PhytoLens Diagnostics Platform</h3>
+            <p>
+              An intelligent botanical diagnostics and plant identification platform. Utilizes generative computer vision models to classify plant species, detect leaf anomalies, and deliver real-time health evaluations through a clean mobile interface.
+            </p>
+            <div class="row-actions">
+              <a href="project-phytolens.html" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Garena Roblox Experience -->
+        <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active"><img src="assets/GarenaRoblox/mainscreen.jpg" alt="Garena Roblox 1" /></div>
+              <div class="carousel-slide"><img src="assets/GarenaRoblox/spawn.jpg" alt="Garena Roblox 2" /></div>
+              <div class="carousel-slide"><img src="assets/GarenaRoblox/teleportation.jpg" alt="Garena Roblox 3" /></div>
+              <div class="carousel-slide"><img src="assets/GarenaRoblox/dragonincave.jpg" alt="Garena Roblox 4" /></div>
+              <div class="carousel-slide"><img src="assets/GarenaRoblox/goblinfight.jpg" alt="Garena Roblox 5" /></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">Luau</span>
+              <span class="tag">Game Architecture</span>
+              <span class="tag">Client/Server Sync</span>
+            </div>
+            <h3>Garena Roblox Experience</h3>
+            <p>
+              An interactive multiplayer RPG engineered with modular state machines, synchronized client-server network replication, custom responsive user interfaces, and optimized collision pipelines. Commended by Garena industry judges.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3: DIP Weiqi AI Platform -->
+        <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active"><img src="assets/DIP/The team.jpg" alt="DIP Team" /></div>
+              <div class="carousel-slide"><img src="assets/DIP/rules.jpg" alt="DIP Rules" /></div>
+              <div class="carousel-slide"><img src="assets/DIP/Basic Quizzes.jpg" alt="DIP Quizzes" /></div>
+              <div class="carousel-slide"><img src="assets/DIP/AIQuiz.jpg" alt="DIP AI Quiz" /></div>
+              <div class="carousel-slide"><img src="assets/DIP/VersusAI.jpg" alt="DIP Versus AI" /></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Interactive UI</span>
+            </div>
+            <h3>Design Innovation Project (Weiqi AI)</h3>
+            <p>
+              An educational web platform engineered to accelerate strategic learning in Weiqi. Integrates Google Gemini for real-time move critique, board state evaluations, and interactive quizzes
+              .
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 4: Autonomous MicroMouse -->
+        <article class="project-row zoom-target" data-carousel>
+        <div class="row-media">
+          <div class="carousel-container">
+            <div class="carousel-slide active"><img src="assets/Micromouse/Makerspace Friendlies 1.png" alt="Mic1" /></div>
+            <div class="carousel-slide"><img src="assets/Micromouse/Makerspace Friendlies 2.png" alt="Mic2" /></div>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+
+        <div class="row-details">
+          <div class="card-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Dijkstra's Algo</span>
+            <span class="tag">Embedded Systems</span>
+            </div>
+          <h3>Autonomous MicroMouse Robot</h3>
+          <p>
+            A 14×14cm autonomous maze-solving robot engineered from scratch. Features custom microcontroller circuitry and Dijkstra pathfinding routines implemented in C++ to autonomously compute the shortest, fastest routes.
+          </p>
+        </div>
+      </article>
+
+        <!-- Project 5: Offline AI Mock Interviewer -->
+        <article class="project-row zoom-target" data-carousel>
+          <div class="row-media">
+            <div class="carousel-container">
+            <div class="carousel-slide active"><img src="assets/Interview/int1.png" alt="Int1" /></div>
+            <div class="carousel-slide"><img src="assets/Interview/int2.png" alt="Int2" /></div>
+            <div class="carousel-slide"><img src="assets/Interview/int3.png" alt="Int3" /></div>
+            <div class="carousel-slide"><img src="assets/Interview/int4.png" alt="Int4" /></div>
+          </div>
+          <div class="carousel-dots"></div>
+          </div>
+
+          <div class="row-details">
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SadTalker</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Local Inference</span>
+            </div>
+            <h3>Offline AI Mock Interviewer</h3>
+            <p>
+              An offline, privacy-first interview simulation application. Optimized GPU execution for the open-source SadTalker model to generate realistic, audio-driven 3D facial animation and lip-syncing from single static portrait inputs.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer zoom-target">
+    <div class="footer-glow"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Luqman Nurhakim Bin Sairi. Built with precision, hardware-accelerated CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* --- Buttons --- */
+.btn {
+  padding: 0.9rem 1.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.btn-sm {
+  padding: 0.7rem 1.35rem;
+  font-size: 0.88rem;
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #06080d;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background: var(--cyan-core);
+  color: #06080d;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-contact {
+  padding: 0.9rem 1.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text-main);
+  background: rgba(22, 28, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-contact:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: var(--cyan-core);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.3);
+}
+
+.btn-contact svg {
+  color: var(--cyan-core);
+}
+
+.btn-linkedin:hover {
+  border-color: #0077b5;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(0, 119, 181, 0.35);
+}
+
+/* --- Badges & Tags --- */
+.badge-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--cyan-core);
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 999px;
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.15);
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--cyan-core);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--cyan-core);
+  animation: pulseBeacon 2s infinite ease-in-out;
+}
+
+@keyframes pulseBeacon {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--cyan-core);
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+/* Direct Email Display Box & Copy Button */
+.email-display-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(13, 17, 25, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 1.1rem;
+  backdrop-filter: blur(10px);
+  margin-top: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  font-family: var(--font-mono);
+}
+
+.email-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+.email-address {
+  font-size: 0.88rem;
+  color: var(--cyan-core);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-address:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+}
+
+.btn-copy:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: var(--cyan-core);
+  color: #ffffff;
+}

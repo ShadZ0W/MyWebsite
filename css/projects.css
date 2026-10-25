@@ -1,0 +1,99 @@
+/* --- Projects Hub Layout --- */
+html {
+  scroll-behavior: smooth;
+}
+
+.projects-page-wrapper {
+  padding-top: 11rem;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.projects-page-wrapper .section-header {
+  margin-bottom: 2.5rem;
+}
+
+/* Category Jump Buttons Bar under Header */
+.project-jump-bar {
+  display: inline-flex;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+  background: rgba(13, 17, 25, 0.7);
+  border: 1px solid var(--card-border);
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+}
+
+.jump-tab {
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.jump-tab:hover {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Section Subheadings */
+.projects-category-section {
+  padding: 2.5rem 0 3.5rem;
+}
+
+.section-subheading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.section-subheading h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.archive-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cyan-core);
+  box-shadow: 0 0 8px var(--cyan-core);
+}
+
+/* Graphic Placeholder for Non-Screenshot Projects */
+.media-placeholder-graphic {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.08), transparent 70%);
+}
+
+.placeholder-icon {
+  font-size: 2.2rem;
+}
+
+.placeholder-caption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 868px) {
+  .projects-page-wrapper {
+    padding-top: 8rem;
+  }
+}

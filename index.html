@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Interactive Dynamic Background Canvas -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- Floating Technical Ruler with Checkpoint HUD -->
+  <aside class="scroll-ruler" id="scrollRuler" aria-label="Page navigation progress">
+    <div class="ruler-checkpoint-label" id="rulerCheckpoint">
+      <span class="checkpoint-indicator"></span>
+      <span id="checkpointText">ABOUT</span>
+    </div>
+    <div class="ruler-indicator" id="rulerIndicator"></div>
+    <div class="ruler-ticks" id="rulerTicks"></div>
+    <span class="ruler-readout" id="rulerReadout">0%</span>
+  </aside>
+
+  <!-- Top Navigation (Adjusted for 100px Logo) -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#about" class="logo-link">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / About Section -->
+  <header class="hero zoom-target" id="about" data-section="ABOUT">
+    <div class="badge-wrapper">
+      <span class="badge">
+        <span class="pulse-dot"></span>
+        Systems &amp; Full-Stack Engineering
+      </span>
+    </div>
+    
+    <h1 class="hero-title">
+      <span class="breathe-text">Crafting fast systems &amp;</span> <br />
+      <span class="gradient-text breathe-text">interactive software.</span>
+    </h1>
+
+    <div class="hero-bio">
+      <p class="hero-subtitle">
+        Hi, I'm <span class="highlight-text">Luqman</span>. I engineer low-latency system utilities, computer vision pipelines, and full-stack web platforms.
+      </p>
+      <p class="hero-detail">
+        Focused on high-throughput architecture, micro-optimized event loops, and clean, responsive interfaces built for responsiveness.
+      </p>
+    </div>
+
+    <!-- Action Buttons with "More About Me" -->
+    <div class="hero-actions">
+        <!-- 1. Primary Action -->
+        <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+
+        <!-- 2. More About Me (Direct link to about.html) -->
+        <a href="about.html" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 16v-4"/>
+            <path d="M12 8h.01"/>
+            </svg>
+            <span>More About Me</span>
+        </a>
+
+        <!-- 3. Get in Touch (Styled Glass/Glow Pill) -->
+        <a href="#contact" class="btn btn-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span>Get in Touch</span>
+        </a>
+        </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" data-section="PROJECTS">
+    <div class="section-header zoom-target">
+      <div class="section-kicker">// PORTFOLIO SELECTIONS</div>
+      <h2>Featured Projects</h2>
+      <p>A showcase of computer vision systems, interactive games, and image processing tools.</p>
+    </div>
+
+    <div class="projects-vertical-list">
+
+      <!-- Project 1: PhytoLens -->
+      <article class="project-row zoom-target" data-carousel>
+        <div class="row-media">
+          <div class="carousel-container">
+            <div class="carousel-slide active"><img src="assets/PhytoLens/1.jpg" alt="PhytoLens Preview 1" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/2.jpg" alt="PhytoLens Preview 2" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/3.jpg" alt="PhytoLens Preview 3" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/4.jpg" alt="PhytoLens Preview 4" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/5.jpg" alt="PhytoLens Preview 5" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/6.jpg" alt="PhytoLens Preview 6" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/7.jpg" alt="PhytoLens Preview 7" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/8.jpg" alt="PhytoLens Preview 8" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/9.jpg" alt="PhytoLens Preview 9" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/10.jpg" alt="PhytoLens Preview 10" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/11.jpg" alt="PhytoLens Preview 11" /></div>
+            <div class="carousel-slide"><img src="assets/PhytoLens/12.jpg" alt="PhytoLens Preview 12" /></div>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+
+        <div class="row-details">
+          <div class="card-tags">
+            <span class="tag">Android Development</span>
+            <span class="tag">AI / ML</span>
+            <span class="tag">FireBase</span>
+          </div>
+          <h3>PhytoLens</h3>
+          <p>
+            An intelligent botanical diagnostics and plant identification platform. Utilizes computer vision models to classify plant species, detect leaf anomalies, and deliver real-time health assessments through an intuitive visual interface.
+          </p>
+          <div class="row-actions">
+            <a href="#" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: GarenaRoblox -->
+      <article class="project-row zoom-target" data-carousel>
+        <div class="row-media">
+          <div class="carousel-container">
+            <div class="carousel-slide active"><img src="assets/GarenaRoblox/mainscreen.jpg" alt="Garena Roblox Preview 1" /></div>
+            <div class="carousel-slide"><img src="assets/GarenaRoblox/spawn.jpg" alt="Garena Roblox Preview 2" /></div>
+            <div class="carousel-slide"><img src="assets/GarenaRoblox/teleportation.jpg" alt="Garena Roblox Preview 3" /></div>
+            <div class="carousel-slide"><img src="assets/GarenaRoblox/dragonincave.jpg" alt="Garena Roblox Preview 4" /></div>
+            <div class="carousel-slide"><img src="assets/GarenaRoblox/goblinfight.jpg" alt="Garena Roblox Preview 5" /></div>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+
+        <div class="row-details">
+          <div class="card-tags">
+            <span class="tag">Luau</span>
+            <span class="tag">Game Architecture</span>
+            <span class="tag">Client/Server Sync</span>
+          </div>
+          <h3>Garena Roblox Experience</h3>
+          <p>
+            An interactive multiplayer game engineered with modular gameplay state machines, synchronized client-server network replication, custom responsive user interfaces, and optimized collision pipelines.
+          </p>
+          <div class="row-actions">
+            <a href="#" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: DIP (Digital Image Processing) -->
+      <article class="project-row zoom-target" data-carousel>
+        <div class="row-media">
+          <div class="carousel-container">
+            <div class="carousel-slide active"><img src="assets/DIP/The team.jpg" alt="DIP Preview 1" /></div>
+            <div class="carousel-slide"><img src="assets/DIP/rules.jpg" alt="DIP Preview 2" /></div>
+            <div class="carousel-slide"><img src="assets/DIP/Basic Quizzes.jpg" alt="DIP Preview 3" /></div>
+            <div class="carousel-slide"><img src="assets/DIP/AIQuiz.jpg" alt="DIP Preview 4" /></div>
+            <div class="carousel-slide"><img src="assets/DIP/VersusAI.jpg" alt="DIP Preview 5" /></div>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+
+        <div class="row-details">
+          <div class="card-tags">
+            <span class="tag">AI</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Interactive UI</span>
+          </div>
+          <h3>Design Innovation Project</h3>
+          <p>
+            A project developed an AI-assisted Weiqi Application with Google Gemini AI integration. It features a user-friendly interface for learning and playing Weiqi, with real-time AI feedback and interactive quizzes to enhance strategic understanding.
+          </p>
+          <div class="row-actions">
+            <a href="#" class="btn btn-primary btn-sm">Explore Project &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- All Projects Button -->
+    <div class="all-projects-wrapper zoom-target">
+      <a href="projects.html" class="btn btn-secondary btn-all-projects">
+        <span>View All Projects</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+<!-- Footer / Contact Section -->
+  <footer id="contact" class="footer zoom-target" data-section="CONTACT">
+    <div class="footer-glow"></div>
+    <div class="section-kicker">// GET IN TOUCH</div>
+    <h2>Let's build something extraordinary.</h2>
+    <p>Available for engineering discussions, software architecture, and full-stack collaborations.</p>
+    
+    <!-- Contact Actions Row -->
+    <div class="contact-actions">
+      <!-- Direct Email Launch -->
+      <a href="mailto:luqman.nurhakimbs@gmail.com" class="btn btn-primary" id="emailLink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <span>Say Hello</span>
+      </a>
+
+      <!-- LinkedIn Link -->
+      <a href="https://www.linkedin.com/in/luqnurhakim99/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-linkedin">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+        </svg>
+        <span>LinkedIn</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+      </a>
+    </div>
+
+    <!-- Visible Email Box with Quick Copy -->
+    <div class="email-display-card">
+      <span class="email-label">DIRECT EMAIL:</span>
+      <a href="mailto:luqman.nurhakimbs@gmail.com" class="email-address" id="emailText">luqman.nurhakimbs@gmail.com</a>
+      <button type="button" class="btn-copy" id="copyEmailBtn" aria-label="Copy Email">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+          <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+        </svg>
+        <span id="copyBtnText">Copy</span>
+      </button>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Luqman. Built with precision, hardware-accelerated CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

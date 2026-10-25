@@ -1,0 +1,519 @@
+/* --- About Page Specifics --- */
+.about-page-wrapper {
+  padding-top: 13rem;
+  max-width: 1040px;
+}
+
+.about-hero {
+  margin-bottom: 4rem;
+}
+
+.about-lead {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 780px;
+  margin-top: 1.2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.about-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.about-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.narrative-card p {
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+}
+
+.tenets-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tenets-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+}
+
+.tenet-number {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cyan-core);
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.tenets-list strong {
+  display: block;
+  color: var(--text-main);
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.tenets-list p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.stack-section {
+  margin-bottom: 5.5rem;
+}
+
+.stack-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.stack-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.stack-category {
+  background: rgba(13, 17, 25, 0.6);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+.stack-category:hover {
+  border-color: var(--card-border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.category-icon {
+  font-family: var(--font-mono);
+  color: var(--cyan-core);
+  font-size: 1.1rem;
+}
+
+.stack-category h4 {
+  font-size: 1.15rem;
+  color: #ffffff;
+}
+
+.stack-category p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.2rem;
+}
+
+.timeline-section {
+  margin-bottom: 5.5rem;
+}
+
+.timeline-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.milestone-timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 1px solid rgba(56, 189, 248, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.milestone-item {
+  position: relative;
+}
+
+.milestone-marker {
+  position: absolute;
+  left: -2.35rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cyan-core);
+  box-shadow: 0 0 10px var(--cyan-core);
+}
+
+.milestone-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--cyan-core);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.milestone-content h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.milestone-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 750px;
+}
+
+/* --- Resume Preview & Download Section --- */
+.resume-section {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.resume-subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Side-by-Side Dual Page Display */
+.resume-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto 3rem;
+}
+
+.resume-page-frame {
+  position: relative;
+  background: rgba(13, 17, 25, 0.85);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 0.8rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.08);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-page-frame:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-border-hover);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.page-badge {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cyan-core);
+  background: rgba(6, 8, 13, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.resume-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  background: #ffffff; /* Contrast backdrop for document pages */
+}
+
+/* Download Button Container */
+.resume-download-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-download {
+  padding: 1rem 2.2rem;
+  font-size: 1rem;
+}
+
+/* Responsive Handling: Stack on Mobile */
+@media (max-width: 768px) {
+  .resume-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* --- Clickable Triggers & Lightbox Overlay --- */
+.resume-page-frame {
+  cursor: zoom-in;
+}
+
+.lightbox-trigger {
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+/* --- Lightbox Modal & Zoomable Viewport --- */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 8, 13, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Floating Zoom Control Bar */
+.lightbox-toolbar {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(13, 17, 25, 0.85);
+  border: 1px solid var(--card-border);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  z-index: 310;
+}
+
+.zoom-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.zoom-btn:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: var(--cyan-core);
+  color: #ffffff;
+}
+
+.zoom-btn.reset-btn {
+  width: auto;
+  border-radius: 6px;
+  padding: 0 0.6rem;
+  font-size: 0.75rem;
+}
+
+.zoom-level {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--cyan-core);
+  min-width: 44px;
+  text-align: center;
+}
+
+/* Bounded Viewport for Panning */
+.lightbox-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.lightbox-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+/* Transformed Zoom Target */
+.lightbox-content {
+  position: relative;
+  display: inline-block;
+  transform-origin: center center;
+  transition: transform 0.08s ease-out; /* Smooth transform responsiveness */
+  will-change: transform;
+}
+
+.lightbox-content img {
+  display: block;
+  max-width: 82vw;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(56, 189, 248, 0.2);
+  pointer-events: none; /* Prevents native browser image ghost-drag */
+}
+
+/* Close Button */
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: rgba(13, 17, 25, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-main);
+  font-size: 1.8rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 310;
+}
+
+.lightbox-close:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: var(--cyan-core);
+  color: #ffffff;
+  transform: scale(1.08);
+}
+/* --- Hobbies & Personal Interests Section --- */
+.hobbies-section {
+  margin-top: 5.5rem;
+  margin-bottom: 5rem;
+}
+
+.hobbies-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.hobbies-lead {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.8rem;
+}
+
+.hobby-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem 1.8rem;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-border-hover);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.15);
+}
+
+.hobby-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.1);
+}
+
+.hobby-icon {
+  font-size: 1.5rem;
+}
+
+.hobby-content h3 {
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.hobby-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.hobby-content strong {
+  color: var(--text-main);
+}
+@media (max-width: 868px) {
+  .about-page-wrapper {
+    padding-top: 10rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

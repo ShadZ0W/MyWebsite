@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Luqman Nurhakim</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <!-- Futuristic & Elegant Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fullscreen Ambient Interactive Canvas -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- Floating Technical Ruler with Checkpoint HUD -->
+  <aside class="scroll-ruler" id="scrollRuler" aria-label="Page navigation progress">
+    <div class="ruler-checkpoint-label" id="rulerCheckpoint">
+      <span class="checkpoint-indicator"></span>
+      <span id="checkpointText">ABOUT</span>
+    </div>
+    <div class="ruler-indicator" id="rulerIndicator"></div>
+    <div class="ruler-ticks" id="rulerTicks"></div>
+    <span class="ruler-readout" id="rulerReadout">0%</span>
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="about.html" style="color: var(--text-main);">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main About Content Container -->
+  <main class="section about-page-wrapper">
+    
+    <!-- Hero / Intro Header -->
+    <header class="about-hero zoom-target" data-section="BIO">
+      <div class="section-kicker">// BIOGRAPHY &amp; ACADEMIC BACKGROUND</div>
+      <h1 class="hero-title">
+        Bridging <span class="gradient-text breathe-text">hardware logic</span><br />
+        with scalable software systems.
+      </h1>
+      <p class="about-lead">
+        I'm <span class="highlight-text">Luqman Nurhakim Bin Sairi</span>, an Electrical &amp; Electronic Engineering graduate from <strong style="color: var(--text-main);">Nanyang Technological University (NTU)</strong>. I too have a diploma in Multimedia &amp; Info-Communication Technology (Software Engineering) from <strong style="color: var(--text-main);">Nanyang Polytechnic</strong>.
+      </p>
+    </header>
+
+    <!-- Two-Column Narrative & Education Section -->
+    <div class="about-grid zoom-target" data-section="EDUCATION">
+      <div class="about-card narrative-card">
+        <h3>Background &amp; Focus</h3>
+        <p>
+          My engineering journey combines low-level systems knowledge with full-stack development. I enjoy architecting intelligent software—from training and integrating generative AI APIs (Gemini) and computer vision models into Android applications, to building autonomous pathfinding algorithms for embedded robotics.
+        </p>
+        <p>
+          With hands-on experience in public sector enterprise systems integration (IRAS, NCS) and team leadership across hackathons and hardware buildathons, I value reliability, clean state synchronization, and deterministic performance.
+        </p>
+      </div>
+
+      <div class="about-card stats-card">
+        <h3>Education</h3>
+        <ul class="tenets-list">
+          <li>
+            <div class="tenet-number">NTU</div>
+            <div>
+              <strong>Nanyang Technological University</strong>
+              <p style="color: var(--cyan-core); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 0.2rem;">B.Eng. in Electrical &amp; Electronic Engineering (2023 – 2026)</p>
+              <p>Specialisations &amp; coursework in Data Structures &amp; Algorithms, Natural Language Processing, Web App Design, Database Systems, Computer Communications, and Information Security.</p>
+            </div>
+          </li>
+          <li>
+            <div class="tenet-number">NYP</div>
+            <div>
+              <strong>Nanyang Polytechnic</strong>
+              <p style="color: var(--cyan-core); font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 0.2rem;">Diploma in Multimedia &amp; InfoComm Tech (2017 – 2020)</p>
+              <p>Specialisation in Software Engineering Practices. Covered Java programming, Full-Stack development, UX design, Software Security &amp; Testing, and Cross-Platform Mobile Apps.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Technical Competencies & Stack Matrix -->
+    <section class="stack-section zoom-target" data-section="SKILLS">
+      <div class="section-kicker">// TECHNICAL TOOLKIT</div>
+      <h2>Core Competencies</h2>
+      
+      <div class="stack-matrix">
+        <!-- Category 1: Programming Languages -->
+        <div class="stack-category">
+          <div class="category-header">
+            <span class="category-icon">&gt;_</span>
+            <h4>Languages</h4>
+          </div>
+          <p>Multi-paradigm development across systems, scripting, and web platforms.</p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Lua / Luau</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Frameworks, Mobile & Backend -->
+        <div class="stack-category">
+          <div class="category-header">
+            <span class="category-icon">&#8759;</span>
+            <h4>Frameworks &amp; Mobile</h4>
+          </div>
+          <p>API routing, web micro-frameworks, and native mobile development.</p>
+          <div class="card-tags">
+            <span class="tag">Android SDK</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Django</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">SadTalker</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases & Cloud -->
+        <div class="stack-category">
+          <div class="category-header">
+            <span class="category-icon">&#9670;</span>
+            <h4>Databases &amp; Testing</h4>
+          </div>
+          <p>Relational schemas, NoSQL document stores, and test integration suites.</p>
+          <div class="card-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Integration Testing</span>
+            <span class="tag">UAT Validation</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Hardware & Embedded Tools -->
+        <div class="stack-category">
+          <div class="category-header">
+            <span class="category-icon">&#9881;</span>
+            <h4>Hardware &amp; Tooling</h4>
+          </div>
+          <p>Microcontrollers, PCB fabrication, and environment toolchains.</p>
+          <div class="card-tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">Embedded C</span>
+            <span class="tag">PCB Soldering</span>
+            <span class="tag">3D Printing</span>
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="timeline-section zoom-target" data-section="EXPERIENCE">
+      <div class="section-kicker">// WORK HISTORY</div>
+      <h2>Industry Experience</h2>
+
+      <div class="milestone-timeline">
+        <!-- IRAS -->
+        <div class="milestone-item">
+          <div class="milestone-marker"></div>
+          <div class="milestone-content">
+            <span class="milestone-meta">Inland Revenue Authority of Singapore (IRAS) • May 2025 – Jul 2025</span>
+            <h3>System Integration &amp; Test Engineer</h3>
+            <p>
+              Developed and executed 50+ end-to-end integration test cases across a multi-tier enterprise system, ensuring zero regression prior to release. Authored complex SQL queries to validate, patch, and manipulate backend relational databases across 3 staging and QA cycles, while auditing deployment pipelines to track over 20 unreleased code changes.
+            </p>
+          </div>
+        </div>
+
+        <!-- SAF -->
+        <div class="milestone-item">
+          <div class="milestone-marker"></div>
+          <div class="milestone-content">
+            <span class="milestone-meta">Singapore Armed Forces (8SIR) • Aug 2021 – Aug 2023</span>
+            <h3>Armskote IC</h3>
+            <p>
+              Maintained 100% continuous accountability for sensitive operational assets, achieving zero-fault clearances during scheduled and unannounced surprise audits. Modernized the armory workflow by conceptualizing and implementing a digital tracking system that replaced manual ledgers to significantly cut issuance times.
+            </p>
+          </div>
+        </div>
+
+        <!-- NCS -->
+        <div class="milestone-item">
+          <div class="milestone-marker"></div>
+          <div class="milestone-content">
+            <span class="milestone-meta">National Computer Systems (NCS) • Mar 2019 – Aug 2019</span>
+            <h3>Software Tester &amp; Helpdesk Attendant</h3>
+            <p>
+              Collaborated with Enterprise Singapore and SAC to validate 15+ public sector web forms processing corporate UEN credentials. Triaged over 120 bug reports on Redmine and automated 40+ scenario-based test suites, accelerating User Acceptance Testing (UAT) cycles by approximately 20%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitions & Project Highlights -->
+    <section class="timeline-section zoom-target" data-section="COMPETITIONS">
+      <div class="section-kicker">// COMPETITIONS &amp; HIGHLIGHTS</div>
+      <h2>Engineering Competitions</h2>
+
+      <div class="milestone-timeline">
+        <!-- Garena Hackathon -->
+        <div class="milestone-item">
+          <div class="milestone-marker"></div>
+          <div class="milestone-content">
+            <span class="milestone-meta">NTU CAO x Garena Hackathon 2026 • Programmer &amp; Asset Designer</span>
+            <h3>Roblox Interactive RPG</h3>
+            <p>
+              Collaborated within a 4-member team to build an immersive RPG experience using Luau, implementing custom character movement mechanics and interactive state systems. Secured industry evaluation and recognition from Garena professionals.
+            </p>
+          </div>
+        </div>
+
+        <!-- MicroMouse -->
+        <div class="milestone-item">
+          <div class="milestone-marker"></div>
+          <div class="milestone-content">
+            <span class="milestone-meta">Micro Mouse Competition (Techathon) • Lead Algorithm Developer</span>
+            <h3>Autonomous Maze-Solving Robot</h3>
+            <p>
+              Designed and built a 14x14cm autonomous MicroMouse robot utilizing Arduino hardware and custom circuit boards. Authored the autonomous pathfinding algorithm using C++ and Dijkstra's algorithm to compute the shortest, fastest optimal paths in real-time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Garage@EEE -->
+        <div class="milestone-item">
+          <div class="milestone-marker"></div>
+          <div class="milestone-content">
+            <span class="milestone-meta">Tinkering Projects by Garage@EEE • Lead Developer</span>
+            <h3>Offline AI-Powered Mock Interviewer</h3>
+            <p>
+              Engineered a completely offline, privacy-first AI mock interview application using Python, Flask, and the open-source SadTalker model to generate realistic, audio-driven facial lip-sync animations from single static images.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Personal Hobbies & Beyond Engineering -->
+    <section class="hobbies-section zoom-target" data-section="HOBBIES">
+      <div class="section-kicker">// BEYOND THE SCREEN</div>
+      <h2>Hobbies &amp; Interests</h2>
+      <p class="hobbies-lead">What keeps me energized, curious, and creative outside of daily development work.</p>
+
+      <div class="hobbies-grid">
+        <!-- Hobby 1: Competitive & Recreational Badminton -->
+        <div class="hobby-card">
+          <div class="hobby-icon-wrap">
+            <span class="hobby-icon">🏸</span>
+          </div>
+          <div class="hobby-content">
+            <h3>Badminton &amp; Athletic Drive</h3>
+            <p>
+              I play badminton recreationally to stay sharp, agile, and competitive. Having served as the <strong>Captain of the Badminton CCA</strong> back in secondary school, court discipline and team leadership formed an early foundation for how I collaborate under pressure today.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hobby 2: AI Experimentation & Creative Tools -->
+        <div class="hobby-card">
+          <div class="hobby-icon-wrap">
+            <span class="hobby-icon">🤖</span>
+          </div>
+          <div class="hobby-content">
+            <h3>Creative AI &amp; Fun Software</h3>
+            <p>
+              I love turning creative ideas into functional, interactive software—whether that means tinkering with multimodal generative models (Gemini API, SadTalker), prototyping novel game loops, or designing clever utilities that solve real-world and desktop problems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hobby 3: AI Music Production -->
+        <div class="hobby-card">
+          <div class="hobby-icon-wrap">
+            <span class="hobby-icon">🎵</span>
+          </div>
+          <div class="hobby-content">
+            <h3>AI Music &amp; Audio Generation</h3>
+            <p>
+              I experiment with generative audio models to compose and produce music with AI. Blending algorithmic sound design, structural prompting, and digital audio workstations allows me to explore creative storytelling and sonic textures through a technical lens.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hobby 4: Hackathons & Building Under Pressure -->
+        <div class="hobby-card">
+          <div class="hobby-icon-wrap">
+            <span class="hobby-icon">⚡</span>
+          </div>
+          <div class="hobby-content">
+            <h3>Competitions &amp; Hackathons</h3>
+            <p>
+              I have a genuine passion for joining techathons, robotics builds, and game jams. Stepping into high-stakes, time-crunched environments pushes me to iterate rapidly, synchronize closely with teammates, and ship working solutions from scratch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Resume Preview & Download Section -->
+    <section class="resume-section zoom-target" data-section="RESUME">
+      <div class="section-kicker">// OFFICIAL CREDENTIALS</div>
+      <h2>Curriculum Vitae</h2>
+      <p class="resume-subtitle">Click either page to enlarge. Verified record of academic background, enterprise experience, and engineering projects.</p>
+
+      <!-- Side-by-Side Resume Image Preview -->
+      <div class="resume-preview-grid">
+        <div class="resume-page-frame" title="Click to enlarge">
+          <span class="page-badge">Page 1 • Expand</span>
+          <img 
+            src="assets/resume/resume-p1.png" 
+            alt="Luqman Nurhakim Resume Page 1" 
+            class="resume-img lightbox-trigger" 
+          />
+        </div>
+        <div class="resume-page-frame" title="Click to enlarge">
+          <span class="page-badge">Page 2 • Expand</span>
+          <img 
+            src="assets/resume/resume-p2.png" 
+            alt="Luqman Nurhakim Resume Page 2" 
+            class="resume-img lightbox-trigger" 
+          />
+        </div>
+      </div>
+
+      <!-- Resume Download Action -->
+      <div class="resume-download-wrapper">
+        <a href="assets/resume/Luqman_Nurhakim_Resume.pdf" download="Luqman_Nurhakim_Resume.pdf" class="btn btn-primary btn-download">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Download Official Resume (PDF)</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+<!-- Image Lightbox Modal Overlay with Zoom Controls -->
+  <div class="lightbox-modal" id="resumeLightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Close enlarged view">&times;</button>
+    
+    <!-- Floating Zoom Toolbar -->
+    <div class="lightbox-toolbar" id="lightboxToolbar">
+      <button type="button" class="zoom-btn" id="zoomOutBtn" title="Zoom Out (-)">−</button>
+      <span class="zoom-level" id="zoomLevelText">100%</span>
+      <button type="button" class="zoom-btn" id="zoomInBtn" title="Zoom In (+)">+</button>
+      <button type="button" class="zoom-btn reset-btn" id="zoomResetBtn" title="Reset View">Reset</button>
+    </div>
+
+    <div class="lightbox-viewport" id="lightboxViewport">
+      <div class="lightbox-content" id="lightboxContent">
+        <img id="lightboxImg" src="" alt="Enlarged Resume Preview" draggable="false" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Minimal Footer -->
+  <footer class="footer zoom-target">
+    <div class="footer-glow"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Luqman. Built with precision, hardware-accelerated CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
